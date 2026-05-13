@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Javier Román Pásaro, AI / Python Engineer specialized in NLP, speech technologies, real-time transcription, and backend AI systems."
+    />
+    <meta name="theme-color" content="#061015" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://javiromanp.github.io/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" href="/favicon.ico" sizes="any" />
+    <title>Javier Román Pásaro | AI / Python Engineer</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://javiromanp.github.io/" />
+    <meta property="og:title" content="Javier Román Pásaro | AI / Python Engineer" />
+    <meta
+      property="og:description"
+      content="AI backend, NLP, speech processing, real-time transcription, research engineering, and data pipelines."
+    />
+    <meta property="og:site_name" content="Javier Román Pásaro Portfolio" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Javier Román Pásaro | AI / Python Engineer" />
+    <meta
+      name="twitter:description"
+      content="Portfolio focused on NLP, speech technologies, backend AI systems, and research engineering."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700;8..60,800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (() => {
+        try {
+          const stored = localStorage.getItem("portfolio-theme");
+          const theme = stored || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.style.colorScheme = theme;
+        } catch {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --color-canvas: 247 244 238;
+  --color-surface: 255 252 246;
+  --color-elevated: 255 255 255;
+  --color-text: 28 32 36;
+  --color-muted: 86 80 74;
+  --color-subtle: 116 106 96;
+  --color-line: 220 210 198;
+  --color-accent: 122 63 80;
+  --color-accent-2: 132 111 96;
+  --color-accent-3: 148 103 50;
+  --color-shadow: 0 0 0;
+  background: rgb(var(--color-canvas));
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-canvas: 14 13 12;
+  --color-surface: 22 20 18;
+  --color-elevated: 29 26 23;
+  --color-text: 243 240 234;
+  --color-muted: 188 178 169;
+  --color-subtle: 145 135 124;
+  --color-line: 65 57 50;
+  --color-accent: 218 154 174;
+  --color-accent-2: 192 169 146;
+  --color-accent-3: 222 174 112;
+  --color-shadow: 0 0 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: rgb(var(--color-canvas));
+  color: rgb(var(--color-text));
+}
+
+body::selection {
+  background: rgb(var(--color-accent) / 0.22);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
